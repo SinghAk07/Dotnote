@@ -1,6 +1,13 @@
-# Dotnote
+<h1 align="center">
+    DOTNOTE
+  <br>
+</h1>
 
-**dotnote** is a utility for note management and search from your terminal
+<h4 align="center">DOTNOTE is a utility for note management and search from your terminal</h4>
+
+
+![Dotnote](https://github.com/SinghAk07/Dotnote/blob/2100b32b032bb194c856282fc0490c074fd70649/proof.png)
+
 
 ## ✨ Features
 
@@ -28,10 +35,10 @@ pip3 install rich
 ## 🏗️ Installation
 
 ```sh
-git clone https://github.com/yourusername/dotnote
-cd dotnote
-sudo chmod +x dotnote
-sudo mv dotnote /usr/local/bin/
+git clone https://github.com/SinghAk07/Dotnote
+cd Dotnote
+sudo chmod +x setup.sh
+./setup.sh
 ```
 
 ## 🔒 Why Root Access Is Required
