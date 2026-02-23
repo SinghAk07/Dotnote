@@ -13,7 +13,6 @@ from rich.table import Table
 DB_PATH = "/root/notes.db"
 
 
-# ---------- SECURITY CHECK ----------
 
 def require_root():
     if os.geteuid() != 0:
@@ -23,7 +22,7 @@ def require_root():
         sys.exit(1)
 
 
-# ---------- CORE FUNCTIONS ----------
+
 
 def init(args):
     conn = sqlite3.connect(DB_PATH)
@@ -152,7 +151,7 @@ def search_notes(args):
     console.print(table)
 
 
-# ---------- ARGPARSE SETUP ----------
+
 
 parser = argparse.ArgumentParser(
     description="dotnote: Secure root-only note CLI",
@@ -226,7 +225,7 @@ search_parser.add_argument("query", help="Search keyword")
 search_parser.set_defaults(func=search_notes)
 
 
-# ---------- EXECUTION ----------
+# execute
 
 require_root()
 args = parser.parse_args()
